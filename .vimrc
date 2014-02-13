@@ -145,17 +145,20 @@ Bundle 'sontek/minibufexpl.vim'
 " It also supports searching only through opened buffers, instead of files
 " using <leader>b.
 "Bundle 'wincent/Command-T'
-"Bundle 'mitechie/pyflakes-pathogen'
+"Syntax Highlighting and Validation
+Bundle 'mitechie/pyflakes-pathogen'
+let g:pyflakes_use_quickfix = 0
 " searching, like grep
-Bundle 'ack.vim'
+Bundle 'mileszs/ack.vim'
 nmap <leader>a <Esc>:Ack!
 " We use ! at the end of it so it doesn't open the first result automatically.
 Bundle 'vim-scripts/pep8'
 let g:pep8_map='<leader>8'
 Bundle 'alfredodeza/pytest.vim'
-"Bundle 'vim-makegreen'
+Bundle 'reinh/vim-makegreen'
 " todolist
-"Bundle 'TaskList'
+Bundle 'TaskList.vim'
+map <leader>td <Plug>TaskList
 " NERD Tree is a project file browser.
 Bundle 'The-NERD-tree'
 map <leader>n :NERDTreeToggle<CR>
@@ -165,6 +168,7 @@ map <leader>j :RopeGotoDefinition<CR>
 map <leader>r :RopeRename<CR>
 Bundle 'tpope/vim-git'
 Bundle 'sjl/gundo.vim'
+map <leader>g :GundoToggle<CR>
 Bundle 'fs111/pydoc.vim'
 
 " Vim doesn't realize that you are in a virtualenv so it wont give you code
