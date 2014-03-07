@@ -36,9 +36,9 @@ set wildmode=longest,list " At command line, complete longest common string, the
 
 set backspace=indent,eol,start	" more powerful backspacing
 
-set tabstop=2    " Set the default tabstop
-set softtabstop=2
-set shiftwidth=2 " Set the default shift width for indents
+set tabstop=4    " Set the default tabstop
+set softtabstop=4
+set shiftwidth=4 " Set the default shift width for indents
 set expandtab   " Make tabs into spaces (set by tabstop)
 set smarttab " Smarter tab levels
 
@@ -111,6 +111,7 @@ Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'gmarik/Vundle'
 " ...
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'A.vim'
 
 
 "
