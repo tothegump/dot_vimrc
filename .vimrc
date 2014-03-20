@@ -111,6 +111,10 @@ Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'gmarik/Vundle'
 " ...
 Bundle 'Valloric/YouCompleteMe'
+" 语法关键字补全              
+let g:ycm_seed_identifiers_with_syntax=1
+let g:ycm_global_ycm_extra_conf = "/Users/sucre/.gump_conf/ycm_extra_conf.py"
+nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 Bundle 'A.vim'
 
 
