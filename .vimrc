@@ -30,7 +30,7 @@ set fo+=o " Automatically insert the current comment leader after hitting 'o' or
 set fo-=r " Do not automatically insert a comment leader after an enter
 set fo-=t " Do no auto-wrap text using textwidth (does not apply to comments)
 
-set nowrap
+" set nowrap " 超出一行不折叠
 set textwidth=0		" Don't wrap lines by default
 set wildmode=longest,list " At command line, complete longest common string, then list alternatives.
 
