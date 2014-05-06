@@ -117,6 +117,16 @@ let g:ycm_global_ycm_extra_conf = "/Users/sucre/.gump_conf/ycm_extra_conf.py"
 nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 Bundle 'A.vim'
 
+" Bundle 'Valloric/YouCompleteMe'
+" Bundle 'gmarik/Vundle'
+" Bundle 'git://git.wincent.com/command-t.git'
+" Bundle 'L9'
+" Bundle 'FuzzyFinder'
+" Bundle 'tpope/vim-fugitive'
+" Bundle 'Lokaltog/vim-easymotion'
+" Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Bundle 'tpope/vim-rails.git'
+" Bundle 'A.vim'
 
 "
 " Brief help
@@ -140,7 +150,7 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'ervandew/supertab'
 " minibuffer
-Bundle 'sontek/minibufexpl.vim'
+Bundle 'fholgado/minibufexpl.vim'
 " To make finding and opening files within your project even easier, we are
 " going to use the command-t plugin. It does have some parts that need to be
 " compiled, so its not already installed by adding it as a submodule. Go to
@@ -168,13 +178,34 @@ map <leader>td <Plug>TaskList
 Bundle 'The-NERD-tree'
 map <leader>n :NERDTreeToggle<CR>
 " Refactoring and Go to definition
-Bundle 'sontek/rope-vim'
+Bundle 'klen/rope-vim'
 map <leader>j :RopeGotoDefinition<CR>
 map <leader>r :RopeRename<CR>
 Bundle 'tpope/vim-git'
 Bundle 'sjl/gundo.vim'
 map <leader>g :GundoToggle<CR>
 Bundle 'fs111/pydoc.vim'
+
+
+" list of Bundles, for it's easy to check
+"
+" Bundle 'msanders/snipmate.vim.git'
+" Bundle 'tpope/vim-surround.git'
+" Bundle 'tpope/vim-git.git'
+" Bundle 'ervandew/supertab.git'
+" Bundle 'fholgado/minibufexpl.vim'
+" Bundle 'mitechie/pyflakes-pathogen.git'
+" Bundle 'mileszs/ack.vim'
+" Bundle 'sjl/gundo.vim.git'
+" Bundle 'fs111/pydoc.vim.git'
+" Bundle 'vim-scripts/pep8.git'
+" Bundle 'alfredodeza/pytest.vim.git'
+" Bundle 'reinh/vim-makegreen'
+" Bundle 'vim-scripts/TaskList.vim.git'
+" Bundle 'vim-scripts/The-NERD-tree.git'
+" Bundle 'klen/rope-vim.git'
+ 
+
 
 " Vim doesn't realize that you are in a virtualenv so it wont give you code
 " completion for libraries only installed there. Add the following script to
