@@ -1,5 +1,7 @@
 " TODO: http://stackoverflow.com/questions/95072/what-are-your-favorite-vim-tricks/225852#225852
 
+set background=dark
+
 " General "{{{
 set nocompatible  " disable vi compatibility.
 set history=256  " Number of things to remember in history.
@@ -113,7 +115,8 @@ Bundle 'gmarik/Vundle'
 Bundle 'Valloric/YouCompleteMe'
 " 语法关键字补全              
 let g:ycm_seed_identifiers_with_syntax=1
-let g:ycm_global_ycm_extra_conf = "/Users/sucre/.gump_conf/ycm_extra_conf.py"
+let g:ycm_confirm_extra_conf=0
+"let g:ycm_global_ycm_extra_conf = "/Users/sucre/.gump_conf/ycm_extra_conf.py"
 nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
 Bundle 'A.vim'
 
@@ -150,7 +153,7 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'ervandew/supertab'
 " minibuffer
-Bundle 'fholgado/minibufexpl.vim'
+Bundle 'sontek/minibufexpl.vim'
 " To make finding and opening files within your project even easier, we are
 " going to use the command-t plugin. It does have some parts that need to be
 " compiled, so its not already installed by adding it as a submodule. Go to
@@ -178,7 +181,7 @@ map <leader>td <Plug>TaskList
 Bundle 'The-NERD-tree'
 map <leader>n :NERDTreeToggle<CR>
 " Refactoring and Go to definition
-Bundle 'klen/rope-vim'
+Bundle 'sontek/rope-vim'
 map <leader>j :RopeGotoDefinition<CR>
 map <leader>r :RopeRename<CR>
 Bundle 'tpope/vim-git'
@@ -205,6 +208,20 @@ Bundle 'fs111/pydoc.vim'
 " Bundle 'vim-scripts/The-NERD-tree.git'
 " Bundle 'klen/rope-vim.git'
  
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Bundle 'Yggdroot/indentLine'
+Bundle "airblade/vim-gitgutter"
+Bundle "gregsexton/gitv"
+Bundle "tpope/vim-commentary"
+Bundle "Raimondi/delimitMate"
+
+" indentLine 更加美观的显示缩进对齐线
+" GitGutter 实时显示git更改
+" Gitv 查看Git详细提交日志(类似gitk)   Gitv 实现了可以用Vim来查看Git的详细提交信息, 只需要打开Vim 执行 :Gitv
+" vim-commentary Vim批量注释工具, 可以注释多行和去除多行注释 Visual 模式下 gc 命令可以注释选中的行 普通模式下 gcc 指令可以快速注释一行 gcu 可以撤销注释
+autocmd FileType python,shell set commentstring=#\ %s                 " 设置Python注释字符
+autocmd FileType mako set cms=##\ %s
+" delimitMate 用于补全括号和引号
 
 
 " Vim doesn't realize that you are in a virtualenv so it wont give you code
