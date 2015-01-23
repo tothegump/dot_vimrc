@@ -153,7 +153,7 @@ Bundle 'msanders/snipmate.vim'
 Bundle 'tpope/vim-surround'
 Bundle 'ervandew/supertab'
 " minibuffer
-Bundle 'sontek/minibufexpl.vim'
+Bundle 'fholgado/minibufexpl.vim'
 " To make finding and opening files within your project even easier, we are
 " going to use the command-t plugin. It does have some parts that need to be
 " compiled, so its not already installed by adding it as a submodule. Go to
@@ -181,7 +181,7 @@ map <leader>td <Plug>TaskList
 Bundle 'The-NERD-tree'
 map <leader>n :NERDTreeToggle<CR>
 " Refactoring and Go to definition
-Bundle 'sontek/rope-vim'
+Bundle 'klen/python-mode'
 map <leader>j :RopeGotoDefinition<CR>
 map <leader>r :RopeRename<CR>
 Bundle 'tpope/vim-git'
